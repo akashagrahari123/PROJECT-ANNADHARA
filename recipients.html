@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Assistance for Shelters & Communities - Annadhara</title>
+  <meta name="description" content="Request hot meals and surplus food assistance for orphanages, elder care sanctuaries, and underserved communities.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span class="announcement-badge">Shelter Support</span>
+    <span>🤝 Verified orphanages & community kitchens receive direct dispatch priority.</span>
+    <a href="feed.html">Browse Available Batches &rarr;</a>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-wrapper" aria-label="Annadhara Home">
+        <img src="images/logo-icon.png" alt="Annadhara Food Donation & Helping" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Annadhara</span>
+          <span class="brand-tagline">Food Donation & Helping</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="donate.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate Food</a></li>
+          <li><a href="recipients.html" class="nav-link active"><i class="fas fa-users-viewfinder"></i> Need Food</a></li>
+          <li><a href="feed.html" class="nav-link"><i class="fas fa-utensils"></i> Live Feed</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fas fa-circle-info"></i> About</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="donate.html" class="btn btn-primary btn-sm">
+            <i class="fas fa-plus"></i> Donate Food
+          </a>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="logo-wrapper">
+          <img src="images/logo-icon.png" alt="Annadhara" class="logo-img" style="width:38px; height:38px;">
+          <span class="brand-name" style="font-size:1.3rem;">Annadhara</span>
+        </div>
+        <button class="modal-close-btn" id="closeDrawerBtn" style="position: static;" aria-label="Close Menu">
+          <i class="fas fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="index.html" class="drawer-link"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="donate.html" class="drawer-link"><i class="fas fa-hand-holding-heart"></i> Donate Surplus Food</a></li>
+        <li><a href="recipients.html" class="drawer-link active"><i class="fas fa-users-viewfinder"></i> Request Food (Shelters)</a></li>
+        <li><a href="feed.html" class="drawer-link"><i class="fas fa-utensils"></i> Live Surplus Feed</a></li>
+        <li><a href="about.html" class="drawer-link"><i class="fas fa-circle-info"></i> About Our Mission</a></li>
+        <li><a href="contact.html" class="drawer-link"><i class="fas fa-envelope"></i> Contact & Hotline</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag tag-amber">Beneficiary Assistance</span>
+        <h1 class="section-title">Request Food Assistance</h1>
+        <p class="section-subtitle">
+          Are you running an orphanage, shelter, or community relief drive? Submit your meal requirements, and Annadhara will route surplus batches directly to your door.
+        </p>
+      </div>
+
+      <div class="form-layout-grid">
+        
+        <!-- Left: Recipient Request Form -->
+        <div class="form-card">
+          <div class="form-header">
+            <h2>Organization & Meal Requirements</h2>
+            <p>100% Free Food Assistance for Verified Community Caregivers.</p>
+          </div>
+
+          <form id="recipientForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="recipName">Shelter / Organization Name <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-building"></i>
+                  <input type="text" id="recipName" class="form-control" placeholder="e.g. Aasra Children's Care Home" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="recipType">Beneficiary Focus <span class="required">*</span></label>
+                <select id="recipType" class="form-control" required>
+                  <option value="Children" selected>Children's Home / Orphanage</option>
+                  <option value="Elderly">Elderly Care Sanctuary</option>
+                  <option value="Slum">Underprivileged Slum Community</option>
+                  <option value="Patients">Hospital Patients & Relatives</option>
+                  <option value="Disaster">Disaster / Emergency Relief</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="recipContactPerson">Contact Person / Coordinator <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-user-check"></i>
+                  <input type="text" id="recipContactPerson" class="form-control" placeholder="e.g. Sister Sunita / Rajiv Sharma" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="recipPhone">Primary Phone Number <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-phone"></i>
+                  <input type="tel" id="recipPhone" class="form-control" placeholder="e.g. 9876543210" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="recipHeadcount">Individuals to Feed (Headcount) <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-users"></i>
+                  <input type="number" id="recipHeadcount" class="form-control" min="5" placeholder="e.g. 45" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="recipUrgency">Urgency Level <span class="required">*</span></label>
+                <select id="recipUrgency" class="form-control" required>
+                  <option value="urgent" selected>Immediate Need (&lt; 2 Hours)</option>
+                  <option value="today">Today's Dinner (by 7:30 PM)</option>
+                  <option value="tomorrow">Tomorrow's Meals</option>
+                  <option value="daily">Ongoing Daily Partnership</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="recipAddress">Delivery / Distribution Address <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fas fa-location-dot"></i>
+                <input type="text" id="recipAddress" class="form-control" placeholder="Full street address, landmark, pin code" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="recipRequirements">Specific Dietary or Packing Requirements</label>
+              <textarea id="recipRequirements" class="form-control" placeholder="e.g. Need soft vegetarian food suitable for elderly residents, or prefer individually packed meal boxes for street distribution."></textarea>
+            </div>
+
+            <div class="safety-box">
+              <input type="checkbox" id="recipPledge" required>
+              <label for="recipPledge">
+                <strong>Non-Profit Affirmation:</strong> I certify that all food received will be served completely free of charge to residents or needy community members with proper hygiene.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-amber btn-block btn-lg">
+              <i class="fas fa-hand-holding-heart"></i> Submit Food Assistance Request
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Open Urgent Shelter Needs & Support Info -->
+        <div class="form-sidebar">
+          
+          <div class="sidebar-guidelines-card" id="openRequests">
+            <h3><i class="fas fa-clipboard-list" style="color: var(--secondary);"></i> Current Shelter Demands</h3>
+            <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 1.25rem;">
+              Donors can also view what shelters are currently waiting for hot meals today:
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div style="background: #f8fafc; border-left: 3px solid #ef4444; padding: 0.85rem 1rem; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                  <strong style="font-size: 0.95rem; color: #1e293b;">Aasra Children's Home</strong>
+                  <span style="font-size: 0.75rem; background: #fee2e2; color: #b91c1c; font-weight:700; padding: 0.2rem 0.5rem; border-radius: 999px;">URGENT</span>
+                </div>
+                <div style="font-size: 0.82rem; color: #64748b;">Needs: 45 Meals • Shivajinagar</div>
+              </div>
+
+              <div style="background: #f8fafc; border-left: 3px solid #f59e0b; padding: 0.85rem 1rem; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                  <strong style="font-size: 0.95rem; color: #1e293b;">Sneha Deep Elder Care</strong>
+                  <span style="font-size: 0.75rem; background: #fef3c7; color: #b45309; font-weight:700; padding: 0.2rem 0.5rem; border-radius: 999px;">DINNER</span>
+                </div>
+                <div style="font-size: 0.82rem; color: #64748b;">Needs: 32 Meals • Malleshwaram</div>
+              </div>
+
+              <div style="background: #f8fafc; border-left: 3px solid #10b981; padding: 0.85rem 1rem; border-radius: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                  <strong style="font-size: 0.95rem; color: #1e293b;">Prerana Slum Learning Center</strong>
+                  <span style="font-size: 0.75rem; background: #d1fae5; color: #047857; font-weight:700; padding: 0.2rem 0.5rem; border-radius: 999px;">AFTERNOON</span>
+                </div>
+                <div style="font-size: 0.82rem; color: #64748b;">Needs: 70 Meals • Rajajinagar</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; text-align: center;">
+              <a href="donate.html" class="btn btn-secondary btn-sm btn-block">
+                <i class="fas fa-hand-holding-heart"></i> Fulfill a Shelter Demand
+              </a>
+            </div>
+          </div>
+
+          <div class="emergency-callout">
+            <i class="fas fa-phone-volume" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: #fde68a;"></i>
+            <h4>Critical Emergency Hunger?</h4>
+            <p>If you have an urgent hunger situation requiring instant volunteer coordination, call our helpline:</p>
+            <a href="tel:7318405760" class="emergency-phone-btn">
+              +91 7318405760
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Recipient Confirmation Modal -->
+  <div class="modal-overlay" id="recipientSuccessModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="document.getElementById('recipientSuccessModal').classList.remove('active')">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <div class="modal-icon-header" style="background: #fef3c7; color: #d97706;">
+        <i class="fas fa-heart"></i>
+      </div>
+
+      <h3>Request Logged Successfully</h3>
+      <p>
+        Your meal assistance request has been assigned Reference Ticket <strong id="recipTicketId">REQ-XXXX</strong>.
+      </p>
+
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; text-align: left; font-size: 0.9rem;">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <i class="fas fa-bell" style="color: var(--secondary);"></i>
+          <span>Our rapid dispatch desk is cross-referencing available food batches nearby.</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <i class="fas fa-phone" style="color: var(--secondary);"></i>
+          <span>A volunteer food captain will contact your coordinator shortly.</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-block" onclick="document.getElementById('recipientSuccessModal').classList.remove('active'); document.getElementById('recipientForm').reset();">
+        Done
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2025–2026 Annadhara. All rights reserved. Fighting Hunger, Reducing Waste.</div>
+        <div>Emergency Food Rescue: <a href="tel:7318405760" style="color: #6ee7b7; font-weight:700;">+91 7318405760</a> | Email: <a href="mailto:ak8924095@gmail.com" style="color: #6ee7b7;">ak8924095@gmail.com</a></div>
+        <div style="margin-top: 0.35rem; font-size: 0.85rem; color: #94a3b8;"><i class="fas fa-location-dot" style="color: #ef4444;"></i> Headquarters: SEC-5, GIDA, GORAKHPUR, UTTAR PRADESH, INDIA</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

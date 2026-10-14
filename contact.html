@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Annadhara Food Rescue & Rapid Hotline</title>
+  <meta name="description" content="Get in touch with the Annadhara team. 24/7 Rapid food rescue helpline, corporate CSR partnerships, and volunteer registration.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span class="announcement-badge">24/7 Rescue</span>
+    <span>📞 Rapid Event & Wedding Surplus Helpline: <strong>+91 7318405760</strong></span>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-wrapper" aria-label="Annadhara Home">
+        <img src="images/logo-icon.png" alt="Annadhara Food Donation & Helping" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Annadhara</span>
+          <span class="brand-tagline">Food Donation & Helping</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="donate.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate Food</a></li>
+          <li><a href="recipients.html" class="nav-link"><i class="fas fa-users-viewfinder"></i> Need Food</a></li>
+          <li><a href="feed.html" class="nav-link"><i class="fas fa-utensils"></i> Live Feed</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fas fa-circle-info"></i> About</a></li>
+          <li><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="tel:7318405760" class="btn btn-amber btn-sm">
+            <i class="fas fa-phone-volume"></i> 7318405760
+          </a>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="logo-wrapper">
+          <img src="images/logo-icon.png" alt="Annadhara" class="logo-img" style="width:38px; height:38px;">
+          <span class="brand-name" style="font-size:1.3rem;">Annadhara</span>
+        </div>
+        <button class="modal-close-btn" id="closeDrawerBtn" style="position: static;" aria-label="Close Menu">
+          <i class="fas fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="index.html" class="drawer-link"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="donate.html" class="drawer-link"><i class="fas fa-hand-holding-heart"></i> Donate Surplus Food</a></li>
+        <li><a href="recipients.html" class="drawer-link"><i class="fas fa-users-viewfinder"></i> Request Food (Shelters)</a></li>
+        <li><a href="feed.html" class="drawer-link"><i class="fas fa-utensils"></i> Live Surplus Feed</a></li>
+        <li><a href="about.html" class="drawer-link"><i class="fas fa-circle-info"></i> About Our Mission</a></li>
+        <li><a href="contact.html" class="drawer-link active"><i class="fas fa-envelope"></i> Contact & Hotline</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Reach Our Team</span>
+        <h1 class="section-title">Get in Touch with Annadhara</h1>
+        <p class="section-subtitle">
+          Have questions about donations, want to register an organization, or have wedding banquet food surplus right now? We are here 24/7.
+        </p>
+      </div>
+
+      <div class="form-layout-grid">
+        
+        <!-- Left: Contact Form -->
+        <div class="form-card">
+          <div class="form-header">
+            <h2>Send Us a Message</h2>
+            <p>We typically respond within 2 hours during operational hours.</p>
+          </div>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Your Full Name <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="contactName" class="form-control" placeholder="e.g. Adarsh Yadav" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactEmail">Email Address <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="e.g. adarsh@example.com" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-phone"></i>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. 7318405760" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactCategory">Inquiry Type <span class="required">*</span></label>
+                <select id="contactCategory" class="form-control" required>
+                  <option value="general" selected>General Inquiry</option>
+                  <option value="urgent_rescue">Urgent Food Rescue (Surplus Available)</option>
+                  <option value="csr">Corporate CSR & Hotel Partnership</option>
+                  <option value="shelter_onboarding">Shelter / NGO Verification</option>
+                  <option value="volunteer">Volunteer Application</option>
+                  <option value="press">Press & Media</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Subject <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fas fa-heading"></i>
+                <input type="text" id="contactSubject" class="form-control" placeholder="e.g. Regular weekend food donations from hotel" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Your Message <span class="required">*</span></label>
+              <textarea id="contactMessage" class="form-control" rows="5" placeholder="Share your inquiry, surplus details, or how you would like to collaborate..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Contact Direct Cards & Hours -->
+        <div class="form-sidebar">
+          
+          <div class="sidebar-guidelines-card">
+            <h3><i class="fas fa-address-book" style="color: var(--primary);"></i> Direct Contact Channels</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 44px; height: 44px; border-radius: 12px; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">
+                  <i class="fas fa-phone-volume"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.8rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Emergency Hotline</div>
+                  <a href="tel:7318405760" style="font-size: 1.15rem; font-weight: 700; color: #047857;">+91 7318405760</a>
+                  <div style="font-size: 0.78rem; color: #64748b;">Available 24/7 for emergency pickups</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 44px; height: 44px; border-radius: 12px; background: #fef3c7; color: #d97706; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.8rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Official Email</div>
+                  <a href="mailto:ak8924095@gmail.com" style="font-size: 1rem; font-weight: 600; color: #1e293b; word-break: break-all;">ak8924095@gmail.com</a>
+                  <div style="font-size: 0.78rem; color: #64748b;">Partnerships & Verification desk</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 44px; height: 44px; border-radius: 12px; background: #fee2e2; color: #ef4444; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">
+                  <i class="fas fa-location-dot"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.8rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Headquarters</div>
+                  <div style="font-size: 0.95rem; font-weight: 700; color: #1e293b; line-height: 1.4;">SEC-5, GIDA, GORAKHPUR, UTTAR PRADESH, INDIA</div>
+                  <div style="font-size: 0.78rem; color: #64748b;">Central Operations & Dispatch Hub</div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 44px; height: 44px; border-radius: 12px; background: #e0f2fe; color: #0284c7; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0;">
+                  <i class="fas fa-share-nodes"></i>
+                </div>
+                <div>
+                  <div style="font-size: 0.8rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Social Community</div>
+                  <div style="display: flex; gap: 0.75rem; margin-top: 0.4rem;">
+                    <a href="https://wa.me/917318405760" target="_blank" rel="noopener" class="social-icon-btn" style="background:#25d366; width:34px; height:34px;" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://x.com/akash_0808" target="_blank" rel="noopener" class="social-icon-btn" style="background:#0f172a; width:34px; height:34px;" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://instagram.com/akash_.0808?psln=MWlmMzc5Zm9jNmNwaQ%3D%3D" target="_blank" rel="noopener" class="social-icon-btn" style="background:#e1306c; width:34px; height:34px;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="emergency-callout" id="volunteer">
+            <i class="fas fa-person-chalkboard" style="font-size: 2.2rem; margin-bottom: 0.5rem; color: #fde68a;"></i>
+            <h4>Become a Food Rescue Captain</h4>
+            <p>Join over 600+ volunteers across our city who dedicate 1–2 hours weekly to pick up and deliver hot meals.</p>
+            <a href="#contactForm" onclick="document.getElementById('contactCategory').value='volunteer'; document.getElementById('contactSubject').value='Volunteer Application'; document.getElementById('contactName').focus();" class="btn btn-amber btn-sm">
+              <i class="fas fa-user-plus"></i> Join the Rescue Corps
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div style="margin-top: 5rem;" id="faq">
+        <div class="section-header">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about surplus donation, safety, and shelter support.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>What kinds of food can be donated on Annadhara?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              We accept freshly cooked hot dishes, unserved banquet buffet items, bakery goods, fresh raw fruits & vegetables, and unopened packaged non-perishables. We strictly do not accept partially eaten plate waste, expired goods, or food stored in unhygienic conditions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is there any fee or charge to donate or receive food?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              None whatsoever. Annadhara is 100% free for all donors and recipient shelters. Our operations are supported by philanthropic patrons and dedicated volunteers who believe that food rescue must remain accessible to all.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How fast does pickup happen once food is listed?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              Our automated system alerts verified shelters and volunteer captains within a 5 km radius within 60 seconds. Typically, a shelter van or volunteer captain arrives for collection within 60–90 minutes.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the minimum quantity of food accepted?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              For volunteer vehicle dispatch, we recommend a minimum of 15–20 meals. However, individual donors with smaller quantities can list them for local community pickup or drop them off at designated Annadhara community food fridges.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are food donors protected legally under Indian law?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              Yes. The Food Safety and Standards Authority of India (FSSAI) has framed regulations (Surplus Food Regulations, 2019) that actively encourage and protect bona fide food donors donating in good faith under standard hygiene practices.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2025–2026 Annadhara. All rights reserved. Fighting Hunger, Reducing Waste.</div>
+        <div>Emergency Hotline: <a href="tel:7318405760" style="color: #6ee7b7; font-weight:700;">+91 7318405760</a> | Email: <a href="mailto:ak8924095@gmail.com" style="color: #6ee7b7;">ak8924095@gmail.com</a></div>
+        <div style="margin-top: 0.35rem; font-size: 0.85rem; color: #94a3b8;"><i class="fas fa-location-dot" style="color: #ef4444;"></i> Headquarters: SEC-5, GIDA, GORAKHPUR, UTTAR PRADESH, INDIA</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

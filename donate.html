@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Surplus Food - Annadhara Food Rescue</title>
+  <meta name="description" content="List fresh surplus food from restaurants, weddings, banquets, and homes to feed verified shelters within hours.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span class="announcement-badge">Every Meal Counts</span>
+    <span>🍲 Fresh surplus food reaches verified shelters within 60–90 minutes of dispatch.</span>
+    <a href="feed.html">See Live Feed &rarr;</a>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo-wrapper" aria-label="Annadhara Home">
+        <img src="images/logo-icon.png" alt="Annadhara Food Donation & Helping" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Annadhara</span>
+          <span class="brand-tagline">Food Donation & Helping</span>
+        </div>
+      </a>
+
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="donate.html" class="nav-link active"><i class="fas fa-hand-holding-heart"></i> Donate Food</a></li>
+          <li><a href="recipients.html" class="nav-link"><i class="fas fa-users-viewfinder"></i> Need Food</a></li>
+          <li><a href="feed.html" class="nav-link"><i class="fas fa-utensils"></i> Live Feed</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fas fa-circle-info"></i> About</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="tel:7318405760" class="btn btn-amber btn-sm">
+            <i class="fas fa-phone-volume"></i> 7318405760
+          </a>
+        </div>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="logo-wrapper">
+          <img src="images/logo-icon.png" alt="Annadhara" class="logo-img" style="width:38px; height:38px;">
+          <span class="brand-name" style="font-size:1.3rem;">Annadhara</span>
+        </div>
+        <button class="modal-close-btn" id="closeDrawerBtn" style="position: static;" aria-label="Close Menu">
+          <i class="fas fa-xmark"></i>
+        </button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="index.html" class="drawer-link"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="donate.html" class="drawer-link active"><i class="fas fa-hand-holding-heart"></i> Donate Surplus Food</a></li>
+        <li><a href="recipients.html" class="drawer-link"><i class="fas fa-users-viewfinder"></i> Request Food (Shelters)</a></li>
+        <li><a href="feed.html" class="drawer-link"><i class="fas fa-utensils"></i> Live Surplus Feed</a></li>
+        <li><a href="about.html" class="drawer-link"><i class="fas fa-circle-info"></i> About Our Mission</a></li>
+        <li><a href="contact.html" class="drawer-link"><i class="fas fa-envelope"></i> Contact & Hotline</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header">
+        <span class="section-tag">Direct Rescue Channel</span>
+        <h1 class="section-title">Donate Fresh Surplus Food</h1>
+        <p class="section-subtitle">
+          Turn your excess dishes into nourishing blessings. Fill in the details below, and our network of nearby shelters and volunteer captains will be instantly notified.
+        </p>
+      </div>
+
+      <!-- Main Form Grid Layout -->
+      <div class="form-layout-grid">
+        
+        <!-- Left: Donation Form Card -->
+        <div class="form-card">
+          <div class="form-header">
+            <h2>Food & Donor Details</h2>
+            <p>100% Free, Safe, and FSSAI Guidelines Compliant.</p>
+          </div>
+
+          <form id="donorForm">
+            <!-- Donor Info -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="donorName">Donor / Organization Name <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-user-tag"></i>
+                  <input type="text" id="donorName" class="form-control" placeholder="e.g. Royal Orchid Caterers" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="donorType">Donor Category <span class="required">*</span></label>
+                <select id="donorType" class="form-control" required>
+                  <option value="Restaurant">Restaurant / Cafe</option>
+                  <option value="Caterer / Event" selected>Caterer / Wedding Hall</option>
+                  <option value="Corporate Kitchen">Corporate Cafeteria</option>
+                  <option value="Supermarket">Supermarket / Grocery</option>
+                  <option value="Bakery">Bakery / Confectionery</option>
+                  <option value="Household">Individual / Household</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="donorPhone">Contact Phone Number <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-phone"></i>
+                  <input type="tel" id="donorPhone" class="form-control" placeholder="e.g. 9876543210" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="donorEmail">Email Address</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="donorEmail" class="form-control" placeholder="e.g. kitchen@royalorchid.com">
+                </div>
+              </div>
+            </div>
+
+            <!-- Food Details -->
+            <div class="form-group">
+              <label class="form-label" for="foodTitle">Item Description & Dishes <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fas fa-bowl-rice"></i>
+                <input type="text" id="foodTitle" class="form-control" placeholder="e.g. 45 Boxes Veg Pulao, Paneer Curry & Roti" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="foodCategory">Food Category <span class="required">*</span></label>
+                <select id="foodCategory" class="form-control" required>
+                  <option value="cooked" selected>Cooked Hot Meals</option>
+                  <option value="bakery">Bakery & Breads</option>
+                  <option value="produce">Fresh Fruits & Vegetables</option>
+                  <option value="packaged">Packaged / Dry Rations</option>
+                  <option value="dairy">Dairy & Sweets</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="foodQuantity">Approximate Servings / Meals <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-people-roof"></i>
+                  <input type="number" id="foodQuantity" class="form-control" min="5" placeholder="e.g. 35" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dietary Selection -->
+            <div class="form-group">
+              <label class="form-label">Dietary Classification <span class="required">*</span></label>
+              <div class="pill-options-group">
+                <label class="pill-option">
+                  <input type="radio" name="dietary" value="veg" checked>
+                  <span><i class="fas fa-seedling"></i> Vegetarian</span>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="dietary" value="vegan">
+                  <span><i class="fas fa-leaf"></i> 100% Vegan</span>
+                </label>
+                <label class="pill-option">
+                  <input type="radio" name="dietary" value="nonveg">
+                  <span><i class="fas fa-drumstick-bite"></i> Non-Vegetarian</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Timing & Location -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="safeHours">Safe Pickup Window (Hours) <span class="required">*</span></label>
+                <select id="safeHours" class="form-control" required>
+                  <option value="2">Within next 2 Hours (Urgent)</option>
+                  <option value="4" selected>Within next 4 Hours (Recommended)</option>
+                  <option value="6">Within next 6 Hours</option>
+                  <option value="12">By end of day (12 Hours)</option>
+                  <option value="24">Next 24 Hours (Produce / Bakery)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="pickupAddress">Pickup Address & Landmark <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fas fa-location-dot"></i>
+                  <input type="text" id="pickupAddress" class="form-control" placeholder="Building, Street, Landmark" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="handlingNotes">Packaging & Storage Notes</label>
+              <textarea id="handlingNotes" class="form-control" placeholder="e.g. Packed in food-grade aluminum foil boxes. Ready on ground floor service dock."></textarea>
+            </div>
+
+            <!-- Safety Pledge -->
+            <div class="safety-box">
+              <input type="checkbox" id="hygienePledge" required>
+              <label for="hygienePledge">
+                <strong>Donor Safety Affirmation:</strong> I certify that this food was prepared hygienically, stored at safe temperatures, has not been served/partially consumed, and is fit for human consumption.
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <i class="fas fa-paper-plane"></i> Broadcast Surplus Food Now
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Sidebar Guidelines & Rapid Help -->
+        <div class="form-sidebar">
+          
+          <div class="sidebar-guidelines-card">
+            <img src="images/safety.jpg" alt="Hygienic food packaging standards" style="border-radius: 12px; margin-bottom: 1.5rem;">
+            <h3><i class="fas fa-shield-heart" style="color: var(--primary);"></i> Donation Standards</h3>
+            <ul class="guidelines-list">
+              <li>
+                <i class="fas fa-circle-check"></i>
+                <span><strong>Fresh & Unserved:</strong> Only untouched buffet and kitchen reserve food is accepted.</span>
+              </li>
+              <li>
+                <i class="fas fa-temperature-arrow-up"></i>
+                <span><strong>Temperature Control:</strong> Hot items kept >60°C; dairy & salads chilled &lt;5°C.</span>
+              </li>
+              <li>
+                <i class="fas fa-box-archive"></i>
+                <span><strong>Hygienic Packing:</strong> Packed in clean covered trays, buckets, or food-grade boxes.</span>
+              </li>
+              <li>
+                <i class="fas fa-truck-fast"></i>
+                <span><strong>Rapid Collection:</strong> Shelters collect or volunteers dispatch within 60–90 mins.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="emergency-callout">
+            <i class="fas fa-headset" style="font-size: 2.5rem; margin-bottom: 0.75rem; color: #fde68a;"></i>
+            <h4>Emergency Surplus Banquet?</h4>
+            <p>If you have >100 meals from an event requiring immediate vehicle dispatch, call our dedicated team directly:</p>
+            <a href="tel:7318405760" class="emergency-phone-btn">
+              <i class="fas fa-phone-volume"></i> +91 7318405760
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Donation Success Confirmation Modal -->
+  <div class="modal-overlay" id="donationSuccessModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="document.getElementById('donationSuccessModal').classList.remove('active')">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <div class="modal-icon-header" style="background: #ecfdf5; color: #059669;">
+        <i class="fas fa-circle-check"></i>
+      </div>
+
+      <h3>Surplus Broadcast Live!</h3>
+      <p>
+        Your generous food donation of <strong id="successMealsCount">35 Meals</strong> has been successfully logged under Ticket <strong id="successTicketId">DON-XXXX</strong>.
+      </p>
+
+      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem; margin-bottom: 1.5rem; text-align: left; font-size: 0.9rem;">
+        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+          <i class="fas fa-bell" style="color: var(--primary);"></i>
+          <span>Shelters within a 5 km radius are receiving alerts right now.</span>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <i class="fas fa-phone" style="color: var(--primary);"></i>
+          <span>A shelter coordinator will call your contact number to coordinate pickup.</span>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 1rem;">
+        <a href="feed.html" class="btn btn-primary btn-block">
+          <i class="fas fa-utensils"></i> View on Live Feed
+        </a>
+        <button class="btn btn-secondary btn-block" onclick="document.getElementById('donationSuccessModal').classList.remove('active'); document.getElementById('donorForm').reset();">
+          Post Another
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2025–2026 Annadhara. All rights reserved. Fighting Hunger, Reducing Waste.</div>
+        <div>Emergency Hotline: <a href="tel:7318405760" style="color: #6ee7b7; font-weight:700;">+91 7318405760</a> | Email: <a href="mailto:ak8924095@gmail.com" style="color: #6ee7b7;">ak8924095@gmail.com</a></div>
+        <div style="margin-top: 0.35rem; font-size: 0.85rem; color: #94a3b8;"><i class="fas fa-location-dot" style="color: #ef4444;"></i> Headquarters: SEC-5, GIDA, GORAKHPUR, UTTAR PRADESH, INDIA</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

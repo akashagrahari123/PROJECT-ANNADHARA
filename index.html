@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annadhara - Connecting Surplus Food with Those in Need</title>
+  <meta name="description" content="Annadhara is an intelligent food rescue network connecting restaurants, banquet halls, and donors with local shelters to fight hunger and reduce food waste.">
+  <meta name="keywords" content="food donation, hunger relief, surplus food rescue, Annadhara, NGO food, zero hunger">
+  <meta name="author" content="Annadhara Community Initiative">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span class="announcement-badge">Live Impact</span>
+    <span>🍲 Over 1,840 fresh meals rescued this week across 32 communities!</span>
+    <a href="feed.html">View Live Food Board &rarr;</a>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="header" id="mainHeader">
+    <div class="container">
+      <a href="index.html" class="logo-wrapper" aria-label="Annadhara Home">
+        <img src="images/logo-icon.png" alt="Annadhara Food Donation & Helping" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-name">Annadhara</span>
+          <span class="brand-tagline">Food Donation & Helping</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active"><i class="fas fa-house"></i> Home</a></li>
+          <li><a href="donate.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate Food</a></li>
+          <li><a href="recipients.html" class="nav-link"><i class="fas fa-users-viewfinder"></i> Need Food</a></li>
+          <li><a href="feed.html" class="nav-link"><i class="fas fa-utensils"></i> Live Feed</a></li>
+          <li><a href="about.html" class="nav-link"><i class="fas fa-circle-info"></i> About</a></li>
+          <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="donate.html" class="btn btn-primary btn-sm">
+            <i class="fas fa-plus"></i> Donate Now
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="logo-wrapper">
+          <img src="images/logo-icon.png" alt="Annadhara" class="logo-img" style="width:38px; height:38px;">
+          <span class="brand-name" style="font-size:1.3rem;">Annadhara</span>
+        </div>
+        <button class="modal-close-btn" id="closeDrawerBtn" style="position: static;" aria-label="Close Menu">
+          <i class="fas fa-xmark"></i>
+        </button>
+      </div>
+
+      <ul class="drawer-links">
+        <li><a href="index.html" class="drawer-link active"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="donate.html" class="drawer-link"><i class="fas fa-hand-holding-heart"></i> Donate Surplus Food</a></li>
+        <li><a href="recipients.html" class="drawer-link"><i class="fas fa-users-viewfinder"></i> Request Food (Shelters)</a></li>
+        <li><a href="feed.html" class="drawer-link"><i class="fas fa-utensils"></i> Live Surplus Feed</a></li>
+        <li><a href="about.html" class="drawer-link"><i class="fas fa-circle-info"></i> About Our Mission</a></li>
+        <li><a href="contact.html" class="drawer-link"><i class="fas fa-envelope"></i> Contact & Hotline</a></li>
+      </ul>
+
+      <div style="margin-top: auto; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+        <a href="donate.html" class="btn btn-primary btn-block">
+          <i class="fas fa-plus"></i> Post Surplus Food
+        </a>
+        <div style="margin-top: 1rem; text-align: center; font-size: 0.85rem; color: #64748b;">
+          <i class="fas fa-phone-volume"></i> 24/7 Helpline: <strong><a href="tel:7318405760" style="color:inherit;">+91 7318405760</a></strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="heroSection">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Left Content -->
+          <div class="hero-content">
+            <div class="hero-live-pill">
+              <span class="live-pulse"></span>
+              <span>18 Active Surplus Batches Available Right Now</span>
+            </div>
+
+            <h1 class="hero-title">
+              Connecting <span class="gradient-text">Surplus Food</span> With Those in Need.
+            </h1>
+
+            <p class="hero-description">
+              Every day, tons of wholesome, freshly prepared food goes to waste from events, banquets, and kitchens while vulnerable communities go to bed hungry. Annadhara provides hyper-local rapid matching so good food reaches hungry bellies with dignity.
+            </p>
+
+            <div class="hero-cta">
+              <a href="donate.html" class="btn btn-primary btn-lg">
+                <i class="fas fa-hand-holding-heart"></i> Donate Surplus Food
+              </a>
+              <a href="recipients.html" class="btn btn-secondary btn-lg">
+                <i class="fas fa-bowl-food"></i> Request Food Assistance
+              </a>
+            </div>
+
+            <div class="hero-trust">
+              <div class="trust-item">
+                <i class="fas fa-shield-check"></i>
+                <span>FSSAI Hygiene Compliant</span>
+              </div>
+              <div class="trust-item">
+                <i class="fas fa-truck-fast"></i>
+                <span>60-90 Min Rapid Dispatch</span>
+              </div>
+              <div class="trust-item">
+                <i class="fas fa-heart-circle-check"></i>
+                <span>100% Free & Transparent</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right Media & Live Card -->
+          <div class="hero-media">
+            <div class="hero-card-stack">
+              <div class="hero-image-wrapper">
+                <img src="images/hero.jpg" alt="Volunteers packing fresh nutritious meals" class="hero-image">
+              </div>
+
+              <!-- Top Impact Badge -->
+              <div class="floating-impact-stat">
+                <span class="stat-num">52,400+</span>
+                <span class="stat-label">Meals Rescued</span>
+              </div>
+
+              <!-- Bottom Live Card -->
+              <div class="floating-card-rescue">
+                <div class="rescue-icon-box">
+                  <i class="fas fa-bell"></i>
+                </div>
+                <div>
+                  <h4>Just Rescued 14m Ago</h4>
+                  <p>50 Biryani Boxes collected from Indiranagar for Sneha Shelter.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Ribbon -->
+    <section class="stats-ribbon">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-number">52,400+</div>
+            <div class="stat-title">Nourishing Meals Rescued</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">1,840+</div>
+            <div class="stat-title">Registered Food Donors</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">340+</div>
+            <div class="stat-title">Partner Shelters & Orphanages</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">41.8 Tons</div>
+            <div class="stat-title">Landfill CO₂ Emissions Prevented</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section" id="howItWorks">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Seamless Journey</span>
+          <h2 class="section-title">How Annadhara Works in 3 Simple Steps</h2>
+          <p class="section-subtitle">A lightning-fast, dignified pipeline transforming edible surplus into community nourishment within hours.</p>
+        </div>
+
+        <div class="how-it-works-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <div class="step-icon-wrap">
+              <i class="fas fa-file-pen"></i>
+            </div>
+            <h3>1. List Surplus Food</h3>
+            <p>Restaurants, caterers, banquet hosts, or corporate cafeterias post surplus meal details with portion counts and safe pickup window in under 2 minutes.</p>
+            <div class="step-highlight">
+              <i class="fas fa-check-circle"></i> Instant automated FSSAI safety checklist
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <div class="step-icon-wrap">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>2. Hyper-Local Shelter Match</h3>
+            <p>Our intelligent system matches the food with verified shelters, orphanages, and community kitchens within a 5 km radius, ensuring maximum freshness.</p>
+            <div class="step-highlight">
+              <i class="fas fa-check-circle"></i> Direct SMS & WhatsApp alerts to shelters
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <div class="step-icon-wrap">
+              <i class="fas fa-truck-ramp-box"></i>
+            </div>
+            <h3>3. Rapid Pickup & Delivery</h3>
+            <p>Volunteer food captains or shelter vehicles arrive with insulated carriers to collect, temperature-verify, and serve hot meals to hungry souls.</p>
+            <div class="step-highlight">
+              <i class="fas fa-check-circle"></i> Live handover verification & tracking
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="donate.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-arrow-right"></i> Start Donating Surplus Food
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Surplus Food Marketplace Feed Preview -->
+    <section class="section section-alt" id="liveFoodMarket">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-amber">Real-Time Rescues</span>
+          <h2 class="section-title">Available Food Surplus Near You</h2>
+          <p class="section-subtitle">Verified food ready for immediate shelter collection. Claim before the safe consumption window expires.</p>
+        </div>
+
+        <!-- Filter & Search Controls -->
+        <div class="feed-controls">
+          <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Items</button>
+            <button class="tab-btn" data-category="cooked">Cooked Meals</button>
+            <button class="tab-btn" data-category="bakery">Bakery & Breads</button>
+            <button class="tab-btn" data-category="produce">Fresh Produce</button>
+          </div>
+
+          <div class="search-box-wrap">
+            <i class="fas fa-search"></i>
+            <input type="text" id="foodSearchInput" class="search-input" placeholder="Search dish, donor, or area...">
+          </div>
+        </div>
+
+        <!-- Food Cards Grid -->
+        <div class="food-cards-grid" id="foodCardsContainer">
+          <!-- Populated dynamically via js/app.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="feed.html" class="btn btn-secondary">
+            <i class="fas fa-list-check"></i> View Full Live Rescue Feed & Shelter Demands
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pillars / Why Annadhara -->
+    <section class="section" id="pillarsSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Mission</span>
+          <h2 class="section-title">Why Annadhara Exists</h2>
+          <p class="section-subtitle">Dedicated to creating an equitable food ecosystem where no stomach stays empty and no edible meal reaches a landfill.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Share Surplus Food</h3>
+            <p>We transform excess food from weddings, banquets, and restaurants into dignified, nutritious meals for those facing acute economic distress.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-hands-holding-child"></i>
+            </div>
+            <h3>Nourish Vulnerable Lives</h3>
+            <p>Children in orphanages, elders in care sanctuaries, and daily wage workers receive wholesome nourishment that sustains health and hope.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Protect the Planet</h3>
+            <p>Decomposing food in landfills produces methane, a potent greenhouse gas. Rescuing meals directly combats global climate change.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Hunger Crisis Counter Callout -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="hunger-crisis-card">
+          <span class="crisis-badge"><i class="fas fa-triangle-exclamation"></i> The Global Hunger Reality</span>
+          <div class="crisis-counter-value" id="liveHungerCounter">0</div>
+          <h3 style="color:#ffffff; margin-bottom: 0.5rem; font-size: 1.5rem;">Estimated Lives Lost to Hunger Globally Today</h3>
+          <p class="crisis-ticker-caption">
+            According to UN FAO, WHO, and World Food Programme data, roughly 24,000+ individuals die from starvation and acute hunger daily—roughly 1 person every 3.5 seconds. Meanwhile, 1.3 billion tons of wholesome food is thrown away each year. Annadhara exists to bridge this tragic paradox.
+          </p>
+
+          <div class="crisis-stats-row">
+            <div class="crisis-stat-col">
+              <h4>1 in 9</h4>
+              <p>People go to bed hungry worldwide every single night.</p>
+            </div>
+            <div class="crisis-stat-col">
+              <h4>40%</h4>
+              <p>Of all food produced in our country gets wasted before consumption.</p>
+            </div>
+            <div class="crisis-stat-col">
+              <h4>Zero Cost</h4>
+              <p>To join Annadhara and save lives in your neighborhood today.</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem;">
+            <a href="about.html" class="btn btn-amber btn-lg">
+              <i class="fas fa-book-open"></i> Read Full Impact Report & Methodology
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Story & Impact Spotlight -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="hero-grid" style="align-items: center;">
+          <div class="hero-image-wrapper">
+            <img src="images/impact.jpg" alt="Food distribution in local community park" class="hero-image" style="height: 400px;">
+          </div>
+          <div>
+            <span class="section-tag">Human Impact</span>
+            <h2>More Than Food — Restoring Dignity & Hope</h2>
+            <p>
+              When a shelter receives hot, freshly cooked meals instead of having to scrape pennies for basic dry rations, they can redirect limited donations toward children's education, medical supplies, and mental healthcare.
+            </p>
+            <p>
+              "Partnering with Annadhara has removed the daily anxiety of wondering how we will feed 45 children dinner tonight. Food rescue is a blessing."
+            </p>
+            <div style="font-weight: 700; color: var(--dark); margin-top: 1rem;">
+              — Sister Sunita, Care Director, Aasra Children's Home
+            </div>
+            <div style="margin-top: 2rem;">
+              <a href="recipients.html" class="btn btn-primary">
+                <i class="fas fa-users-viewfinder"></i> Register Your Shelter
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Emergency Hotline Banner -->
+    <section class="section section-dark">
+      <div class="container" style="text-align: center;">
+        <span class="section-tag tag-amber" style="background: rgba(245, 158, 11, 0.2); color: #fde68a;">24/7 Rapid Rescue</span>
+        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Have Large Event or Wedding Food Surplus?</h2>
+        <p style="max-width: 650px; margin: 0 auto 2.5rem auto; font-size: 1.15rem; color: #d1fae5;">
+          Do not let fresh banquets get discarded into garbage dumps. Call our emergency rescue helpline and our volunteer vehicles will be dispatched immediately.
+        </p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
+          <a href="tel:7318405760" class="btn btn-amber btn-lg">
+            <i class="fas fa-phone-volume"></i> Call Helpline: +91 7318405760
+          </a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">
+            <i class="fas fa-envelope"></i> Send Urgent Message
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Claim Food Modal Dialog -->
+  <div class="modal-overlay" id="claimModal">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="closeClaimModal()" aria-label="Close modal">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <div class="modal-icon-header">
+        <i class="fas fa-hand-holding-heart"></i>
+      </div>
+
+      <h3 id="modalFoodTitle">Claim Food Portion</h3>
+      <p id="modalDonorName" style="color: #64748b; font-size: 0.9rem; margin-bottom: 0.5rem;">Donor Details</p>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="food-type-pill veg" id="modalPortions">30 Meals Available</span>
+      </div>
+
+      <form onsubmit="confirmClaimAction(event)">
+        <div class="form-group">
+          <label class="form-label" for="claimShelterName">Shelter / Organization Name <span class="required">*</span></label>
+          <input type="text" id="claimShelterName" class="form-control" placeholder="e.g. Hope Orphanage Trust" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="claimPhone">Volunteer / Coordinator Phone Number <span class="required">*</span></label>
+          <input type="tel" id="claimPhone" class="form-control" placeholder="e.g. 9876543210" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="claimVehicle">Pickup Method</label>
+          <select id="claimVehicle" class="form-control">
+            <option value="van">Shelter Van / Auto</option>
+            <option value="volunteer">Annadhara Volunteer Dispatch</option>
+            <option value="self">Walk-in Collection</option>
+          </select>
+        </div>
+
+        <div class="safety-box" style="margin-bottom: 1.5rem;">
+          <input type="checkbox" id="claimPledge" required>
+          <label for="claimPledge">
+            I confirm that this food will be distributed free of charge to beneficiaries in need with hygienic food safety protocols.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block btn-lg">
+          <i class="fas fa-check"></i> Confirm Meal Reservation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Chatbot Floating Button & Window -->
+  <button class="chatbot-widget-btn" id="chatbotBtn" aria-label="Open Annadhara Virtual Assistant">
+    <span class="chatbot-unread-dot"></span>
+    <i class="fas fa-comments"></i>
+  </button>
+
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div>
+          <div class="chat-header-title">Annadhara Assistant</div>
+          <div class="chat-status-sub">Online & Ready to Help</div>
+        </div>
+      </div>
+      <button class="chat-close-btn" id="closeChatBtn" aria-label="Close Chat">
+        <i class="fas fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg bot">
+        Namaste! 🙏 Welcome to Annadhara. I am here to help you donate excess food, request shelter meals, or answer questions about safety guidelines.
+      </div>
+    </div>
+
+    <div class="chat-chips">
+      <button class="chip-btn" data-prompt="How to donate surplus?">How to donate?</button>
+      <button class="chip-btn" data-prompt="How does pickup work?">How does pickup work?</button>
+      <button class="chip-btn" data-prompt="Is it 100% free?">Is it free?</button>
+      <button class="chip-btn" data-prompt="What is the emergency helpline number?">Helpline number</button>
+    </div>
+
+    <div class="chat-input-bar">
+      <input type="text" id="chatInput" class="chat-input" placeholder="Type your question here...">
+      <button class="chat-send-btn" id="chatSendBtn" aria-label="Send Message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Master Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-wrapper">
+            <img src="images/logo-icon-white.png" alt="Annadhara" class="logo-img">
+            <div class="brand-text">
+              <span class="brand-name">Annadhara</span>
+              <span class="brand-tagline" style="color: #6ee7b7;">Food Donation & Helping</span>
+            </div>
+          </div>
+          <p>
+            Annadhara is a mission-driven grassroots movement connecting surplus food with communities battling hunger. We ensure edible food never dies in trash bins while people starve.
+          </p>
+          <div class="footer-socials">
+            <a href="https://wa.me/917318405760" target="_blank" rel="noopener" class="social-icon-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://x.com/akash_0808" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com/akash_.0808?psln=MWlmMzc5Zm9jNmNwaQ%3D%3D" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:ak8924095@gmail.com" class="social-icon-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home Overview</a></li>
+            <li><a href="donate.html"><i class="fas fa-chevron-right"></i> Donate Surplus Food</a></li>
+            <li><a href="recipients.html"><i class="fas fa-chevron-right"></i> Request Food (Shelters)</a></li>
+            <li><a href="feed.html"><i class="fas fa-chevron-right"></i> Live Surplus Feed</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> Mission & Vision</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact & Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Food Safety & FAQs</h4>
+          <ul class="footer-nav">
+            <li><a href="about.html#safety"><i class="fas fa-chevron-right"></i> FSSAI Hygiene Guide</a></li>
+            <li><a href="about.html#hunger"><i class="fas fa-chevron-right"></i> Hunger Crisis Data</a></li>
+            <li><a href="contact.html#faq"><i class="fas fa-chevron-right"></i> Donor FAQs</a></li>
+            <li><a href="contact.html#volunteer"><i class="fas fa-chevron-right"></i> Become a Volunteer</a></li>
+            <li><a href="recipients.html#openRequests"><i class="fas fa-chevron-right"></i> Urgent Shelter Needs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Rapid Rescue</h4>
+          <div class="footer-contact-info">
+            <p>
+              <i class="fas fa-phone-volume"></i>
+              <span><strong>24/7 Helpline:</strong><br><a href="tel:7318405760" style="color: #ffffff; font-weight:700;">+91 7318405760</a></span>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <span><strong>Email Assistance:</strong><br><a href="mailto:ak8924095@gmail.com" style="color: #6ee7b7;">ak8924095@gmail.com</a></span>
+            </p>
+            <p>
+              <i class="fas fa-location-dot"></i>
+              <span><strong>Headquarters:</strong><br><span style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.4; display: inline-block;">SEC-5, GIDA, GORAKHPUR, UTTAR PRADESH, INDIA</span></span>
+            </p>
+            <p>
+              <i class="fas fa-clock"></i>
+              <span><strong>Rescue Dispatch:</strong> 24 Hours a day, 7 days a week</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2025–2026 <strong>Annadhara Foundation</strong>. All rights reserved. Fighting Hunger, Reducing Waste.
+        </div>
+        <div>
+          Designed with 💚 for humanitarian impact and Zero Hunger (UN SDG 2).
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
